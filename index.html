@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartal Kod - Profesyonel Web Geliştirme</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Video Background -->
+    <video id="bg-video" autoplay muted loop>
+        <source src="image/kartal.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="eagle-animation">
+                <i class="fas fa-code"></i>
+            </div>
+            <h2>Kartal Kod Yükleniyor...</h2>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="image/kartalkod.png" alt="Kartal Kod Logo">
+                <span>Kartal Kod</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#services">Hizmetler</a></li>
+                <li><a href="#pricing">Fiyatlar</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="typing-text">Profesyonel Web Geliştirme</span>
+            </h1>
+            <p class="hero-subtitle">HTML, CSS, JavaScript ile modern ve responsive web siteleri</p>
+            <div class="location-info">
+                <i class="fas fa-map-marker-alt"></i>
+                <span id="location-text">Konum belirleniyor...</span>
+            </div>
+            <button class="cta-button" onclick="scrollToSection('services')">
+                Hizmetleri Keşfet
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-code">
+                <span>&lt;html&gt;</span>
+                <span>{css}</span>
+                <span>function()</span>
+                <span>&lt;/&gt;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Hizmetlerimiz</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML Geliştirme</h3>
+                    <p>Semantik ve SEO uyumlu HTML yapıları ile modern web sayfaları</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS Tasarım</h3>
+                    <p>Responsive ve çekici tasarımlar ile kullanıcı deneyimi odaklı stiller</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript Programlama</h3>
+                    <p>İnteraktif ve dinamik web uygulamaları için modern JavaScript çözümleri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Fiyatlarımız</h2>
+            <div class="pricing-toggle">
+                <span id="currency-display">TL</span>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card main-package" data-aos="zoom-in">
+                    <div class="pricing-header">
+                        <h3>Ana Paket</h3>
+                        <div class="price">
+                            <span class="currency" id="main-price">500</span>
+                            <span class="currency-symbol" id="main-currency">₺</span>
+                        </div>
+                        <p>3 Temel Dosya</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> HTML Dosyası</li>
+                        <li><i class="fas fa-check"></i> CSS Dosyası</li>
+                        <li><i class="fas fa-check"></i> JavaScript Dosyası</li>
+                        <li><i class="fas fa-check"></i> Responsive Tasarım</li>
+                        <li><i class="fas fa-check"></i> Modern Kodlama</li>
+                    </ul>
+                </div>
+                <div class="pricing-card additional-files" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3>Ek Dosyalar</h3>
+                        <div class="price">
+                            <span class="currency" id="additional-price">50</span>
+                            <span class="currency-symbol" id="additional-currency">₺</span>
+                        </div>
+                        <p>Her Ek Dosya İçin</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Özel Modüller</li>
+                        <li><i class="fas fa-check"></i> Ek Sayfalar</li>
+                        <li><i class="fas fa-check"></i> Özel Animasyonlar</li>
+                        <li><i class="fas fa-check"></i> API Entegrasyonları</li>
+                        <li><i class="fas fa-check"></i> Özel Fonksiyonlar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Bizimle İletişime Geçin</h3>
+                    <p>Projeleriniz için profesyonel web geliştirme hizmetleri</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-posta</h4>
+                            <a href="mailto:kartalkod00@gmail.com">kartalkod00@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <a href="https://www.instagram.com/zafer_varol08/?igsh=cGZ6b2t4bzV1ZXB1#" target="_blank">@zafer_varol08</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-logo" data-aos="fade-left">
+                    <div class="logo-container">
+                        <img src="image/kartalkod.png" alt="Kartal Kod Logo">
+                        <h3>Kartal Kod</h3>
+                        <p>Profesyonel Web Geliştirme</p>
+                        <div class="logo-animation">
+                            <div class="pulse-ring"></div>
+                            <div class="pulse-ring"></div>
+                            <div class="pulse-ring"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="image/kartalkod.png" alt="Kartal Kod">
+                    <span>Kartal Kod</span>
+                </div>
+                <p>&copy; 2024 Kartal Kod. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
