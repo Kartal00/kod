@@ -1,4 +1,46 @@
 <!DOCTYPE html>
+/* Bu kodu CSS'in en üstüne ekleyin */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%; /* Bu satırı ekleyin */
+}
+
+/* Container'ları düzeltin */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%; /* Bu satırı ekleyin */
+}
+
+/* Mobil için container padding'i azaltın */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .nav-container {
+        padding: 1rem;
+        width: 100%;
+    }
+    
+    /* Tüm section'ları kontrol edin */
+    .hero-content,
+    .services-grid,
+    .pricing-grid,
+    .contact-grid {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
