@@ -106,16 +106,16 @@ function updatePricing() {
     if (isInTurkey) {
         // Turkey pricing in TL
         currencyDisplay.textContent = 'TL';
-        mainPrice.textContent = '500';
+        mainPrice.textContent = '1000';
         mainCurrency.textContent = '₺';
-        additionalPrice.textContent = '50';
+        additionalPrice.textContent = '300';
         additionalCurrency.textContent = '₺';
     } else {
         // International pricing in EUR
         currencyDisplay.textContent = 'EUR';
-        mainPrice.textContent = '100';
+        mainPrice.textContent = '500';
         mainCurrency.textContent = '€';
-        additionalPrice.textContent = '25';
+        additionalPrice.textContent = '200';
         additionalCurrency.textContent = '€';
     }
     
