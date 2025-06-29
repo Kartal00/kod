@@ -432,6 +432,6 @@ console.log(`
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Profesyonel web geliştirme hizmetleri
 📧 kartalkod00@gmail.com
-📱 @zafer_varol08
+📱 @kartalkod
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 `);
