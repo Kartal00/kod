@@ -1190,14 +1190,14 @@ function updatePrices(currency) {
     const additionalPrice = document.getElementById('additional-price');
     
     if (currency === 'USD') {
-        mainPrice.textContent = '20';
-        additionalPrice.textContent = '2';
-    } else if (currency === 'EUR') {
-        mainPrice.textContent = '18';
-        additionalPrice.textContent = '2';
-    } else {
         mainPrice.textContent = '500';
-        additionalPrice.textContent = '50';
+        additionalPrice.textContent = '200';
+    } else if (currency === 'EUR') {
+        mainPrice.textContent = '500';
+        additionalPrice.textContent = '200';
+    } else {
+        mainPrice.textContent = '1000';
+        additionalPrice.textContent = '300';
     }
 }
 
